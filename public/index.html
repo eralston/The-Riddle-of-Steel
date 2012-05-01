@@ -48,7 +48,7 @@
       <input type="radio" id="radio8" name="radio" class="proficiency-button" data-prof-class="pole-arms"  /><label for="radio8">Pole-Arms</label>
       <input type="radio" id="radio9" name="radio" class="proficiency-button" data-prof-class="mass-weapons-and-shield"  /><label for="radio9">Mass Weapons &amp; Shield</label>
       <input type="radio" id="radio10" name="radio" class="proficiency-button" data-prof-class="dagger"  /><label for="radio10">Dagger</label>
-      <input type="radio" id="radio11" name="radio" class="proficiency-button" data-prof-class="pugiligm"  /><label for="radio11">Pugilism</label>
+      <input type="radio" id="radio11" name="radio" class="proficiency-button" data-prof-class="pugilism"  /><label for="radio11">Pugilism</label>
     </div>
     
     <!--<ul id="maneuver_list">
@@ -61,28 +61,28 @@
     </ul>-->
     <h2> Offensive Maneuvers</h2>
     <div class="maneuver-list">
-      <div class="accordion mass-weapons-and-shield">
+      <div class="accordion pole-arms mass-weapons-and-shield">
         <h3><a href="#">Bash</a></h3>
         <div> <p>This is the standard attack for all swung blunt weapons.  Extra power may be added to a bash by expending one (and only one) extra CP die prior to rolling and adding 1 damage in the event of a successful hit.</p></div>
       </div>
-      <div class="accordion longsword">
+      <div class="accordion longsword cut-and-thrust rapier case-of-rapier doppelhander pole-axe pole-arms">
         <h3><a href="#">Beat</a></h3>
         <div> <p>The beat is an attack upon an opponent's weapon or shield in attempt to temporarily remove it from the equation. Beats may only be performed at the start of a bout or following a "pause".  This sudden, brutal, and effective maneuver is executed by declaring "Beat" as your offensive maneuver, along with the dice alloted to the attack.  The defender assigns defense dice to a defensive maneuvert and the context is rolled normally.  If the attacker wins the beat, then the defenders weapon(or whatever is "beaten") is knowed aside and cannot be used in defense on the following exchange.  Additionally, execery success in the attacker's margin costs the defender 2 CP (this functions similar to Shock).  If the defender wins then the round is resolved normally.</p>
         <p>Using a Beat is an excellent way to handle opponents with longer weapons as well: all range penalties are but in half (round down) when beating.</p></div>
       </div>
-      <div class="accordion mass-weapons-and-shield">
+      <div class="accordion sword-and-shield cut-and-thrust rapier case-of-rapier mass-weapons-and-shield">
         <h3><a href="#">Bind &amp; Strike</a></h3>
         <div> <p>This maneuver uses off-hand weapons (shields, poniards, etc) to bind or pin down an opponent's weapon, opening up a clear follow-up attack.  On one exchange, roll attack as normal with the off-hand weapon or shield (using DTN as ATN for shields).  If this attack is successful, your opponent loses 1 CP for every success in the margin, good on the next exchange.</p></div>
       </div>
-      <div class="accordion mass-weapons-and-shield">
+      <div class="accordion sword-and-shield longsword cut-and-thrust doppelhander pole-axe pole-arms mass-weapons-and-shield dagger">
         <h3><a href="#">Cut</a></h3>
         <div> <p>This is the standard attack for all edged weapons.  Extra power may be added by expending one (and only one) extra CP prior to rolling to add 1 damage in the event of a successful hit.</p></div>
       </div>
-      <div class="accordion mass-weapons-and-shield">
-        <h3><a href="#">Double Attack</a></h3>
+      <div class="accordion cut-and-thrust mass-weapons-and-shield rapier case-of-rapier">
+        <h3><a href="#">Double Strike</a></h3>
         <div> <p>Attacking with two weapons at once is a tricky thing.  Divide you dice on this attack in any proportion between both weapons (remember weapon length penalties) and attack.  Your opponent may defend by (a) evading (b) blocking or parrying one and hoping the other doesn't hit (c) if properly equipped, block or parry both (d) buy initiative to hit first</p></div>
       </div>
-      <div class="accordion mass-weapons-and-shield">
+      <div class="accordion mass-weapons-and-shield longsword">
         <h3><a href="#">Evasive Attack</a></h3>
         <div> <p>This is a defensive measure that takes place during an attack.  In principle the attacker cuts with his weapons while simultaneously jumping backward so as to evade an opponent's attack.  This maneuver requires a great deal of skill, but is indispensable to those who often find themselves in quick-draw style duels where both opponents go straight to attacks.</p>
         <p>
@@ -90,7 +90,7 @@
         </p>
         </div>
       </div>
-      <div class="accordion mass-weapons-and-shield">
+      <div class="accordion cut-and-thrust sword-and-shield longsword doppelhander pole-arms">
         <h3><a href="#">Feint-and-Cut</a></h3>
         <div> 
           <p>
@@ -107,7 +107,7 @@
           </p>
         </div>
       </div>
-      <div class="accordion mass-weapons-and-shield">
+      <div class="accordion cut-and-thrust sword-and-shield longsword rapier case-of-rapier doppelhander pole-arms">
         <h3><a href="#">Feint-and-Thrust</a></h3>
         <div> 
           <p>
@@ -121,7 +121,7 @@
           </p>
         </div>
       </div>
-      <div class="accordion mass-weapons-and-shield">
+      <div class="accordion dagger pugilism">
         <h3><a href="#">Grapple</a></h3>
         <div> 
           <p>
@@ -132,7 +132,7 @@
           </p>
         </div>
       </div>
-      <div class="accordion mass-weapons-and-shield">
+      <div class="accordion longsword doppelhander">
         <h3><a href="#">Half-Sword</a></h3>
         <div> 
           <p>
@@ -140,6 +140,49 @@
           </p>
           <p>
               Once can shift from normal grip to half-sword at any time, for instance even durng a Counter, though doing so during an exchange costs 1 CP and requires a Reflex/TN6 roll.  The half-sword may be released at any time.
+          </p>
+        </div>
+      </div>
+      <div class="accordion mass-weapons-and-shield pole-axe pole-arms mass-weapons-and-shield">
+        <h3><a href="#">Hook</a></h3>
+        <div> 
+          <p>
+            Many pole-arms and aces are capable of hooking an opponent's limb or head.  This maneuver is executed like a thrust that intentionally misses, and then the shaft is pressed against the target and pulled.  This maneuver is particularly effective on the legs, cuasing one's opponent to fall and become prone.  After spending the Activation Cost (usually 1) allot dice for a refular thurst-like attack.  Eevery success in the Margin of Success lowers the target's Knockdown attribute by one die.  The hooked party then rolls Knockdown/TN8.  Failure drops him to the ground (-1/2 total CP for lying prone).  Fumbling causes damgage as a 6' fall).
+          </p>
+        </div>
+      </div>
+      <div class="accordion mass-weapons-and-shield sword-and-shield cut-and-thrust rapier case-of-rapier mass-weapons-and-shield">
+        <h3><a href="#">Simultaneous Block/Strike</a></h3>
+        <div> 
+          <p>
+            This gusty maneuver is not unlike the bind and Strike maneuver, except that is all happens in the course of one Exchange.  To perform this maneuver, divide your CP between attack and defense (remember that you may need dice for the next Exchange).  Either attack or defense must be half as large as the other (this you could divide 9 dice into 6 and 3, or 3 and 6, but not 2 and 7).  The defense is then rolled against your opponent's attack and your offence against his defense (if any).  This maneuver is obviously only useful in situations where both you <em>and</em> your opponent are attacking at once.  All attacks are resolved normally.
+          </p>
+        </div>
+      </div>
+      <div class="accordion longsword cut-and-thrust rapier doppelhander pole-arms">
+        <h3><a href="#">Stop Short</a></h3>
+        <div> 
+          <p>
+            This maneuver consists of leaping or stomping at an opponent and then halting suddenly to thors your opponent off guard.
+          </p>
+          <p>
+            The maneuver's cost is variable.  Roll a contest of the attacker's WP against the defender's Reflex.  The attacker's TN is equal to his opponent's Per.  The defender's TN is equal to 7 plus the number of dice the attacker spend in executing the maneuver.  This count as an attack.  If the defender wins, then he may take the initiative normally.  If the attacker wins, then his opponent loses a number of CP wqual to the attacker's margin of success.  This maneuver if really only effective once.  Every additional attempt (whether the first one failed or not) cumulatively costs 1 extra CP to the attacker.
+          </p>
+        </div>
+      </div>
+      <div class="accordion sword-and-shield longsword cut-and-thrust rapier case-of-rapier doppelhander pole-axe pole-arms mass-weapons-and-shield dagger">
+        <h3><a href="#">Thrust</a></h3>
+        <div> 
+          <p>
+            Trying to put the pointy end into your opponent.  Thrusts are notoriously fast, act as if the thrusting party's Reflex was 1 higher should initiative tie (as when both side declare attack).
+          </p>
+        </div>
+      </div>
+      <div class="accordion mass-weapons-and-shield cut-and-thrust rapier">
+        <h3><a href="#">Toss</a></h3>
+        <div> 
+          <p>
+            Distraction has always been an important part of dueling and combat.  This maneuver allows you to toss a hat, glove, sidearm, or other object into your opponent's face, thereby distracting them.  To execute this maneuver, simply allot dice as for a normal attack.  The ATN is assumed to be 7 for most hand-held objects such as a fist of sand, glove, hat, or dagger.  Your opponent may dodge this object at DTN 7 (like a partial evasion).  If you win, each success in the Margin causes him to lose 1 CP on the following Exchange (not unlike a bind-and-strike).  Additionally, you retain the initiative.
           </p>
         </div>
       </div>
