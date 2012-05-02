@@ -58,7 +58,7 @@
       <input type="radio" id="radio11" name="radio" class="proficiency-button" data-prof-class="pugilism"  /><label for="radio11">Pugilism</label>
     </div>
     
-    <h2> Offensive Maneuvers</h2>
+    <h2 class="offensive-maneuver-header"> Offensive Maneuvers</h2>
     <div class="maneuver-list">
       <div class="accordion pole-arms mass-weapons-and-shield">
         <h3><a href="#">Bash</a></h3>
@@ -199,8 +199,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js" type="text/javascript"></script>
     <script type"javascript/text">
     
+    var $body = $("body");
+    var $profHeader = $(".offensive-maneuver-header");
     function scrollToProficiencies(){
-      $("body").scrollTop($(".maneuver-list").first().offset().top);
+      $body.scrollTop($profHeader.offset().top);
     }
     
     function onLoad() {
