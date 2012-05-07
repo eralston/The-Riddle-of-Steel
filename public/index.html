@@ -60,6 +60,41 @@
                 <img src="images/locations.png" />
                 <table>
                     <tbody>
+                        <tr>
+                            <td>
+                                Thrusts (including punches) to the head (XIII): -1CP
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Thrusts to the lower legs (VIII): -2CP
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Thrust to the arms and hands (XIV): -1CP
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Cuts/Bashes to the lower legs vs. shields: +1CP
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Cuts/Bashes to the arms/hands (VII): +1CP
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Missile weapon attacks to the head (XIII): -2MP
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Missile Weapon attack to the lower legs or arms: -3MP
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -153,7 +188,7 @@
     <h2>
         Proficiencies</h2>
     <div id="proficiencies" class="button-set">
-        <input type="radio" id="radio1" name="radio" checked="true" class="proficiency-button"
+        <input type="radio" id="radio1" name="radio" class="proficiency-button"
             data-prof-class="sword-and-shield" /><label for="radio1">Sword &amp; Shield</label>
         <input type="radio" id="radio2" name="radio" class="proficiency-button" data-prof-class="longsword" /><label
             for="radio2">Longsword</label>
@@ -179,7 +214,7 @@
     <h2 class="offensive-maneuver-header">
         Offensive Maneuvers</h2>
     <div class="maneuver-list">
-        <div class="accordion pole-arms mass-weapons-and-shield">
+        <div class="accordion pole-arms mass-weapons-and-shield" data-default-cost="(0)">
             <h3>
                 <a href="#">Bash</a></h3>
             <div>
@@ -189,7 +224,8 @@
                     1 damage in the event of a successful hit.</p>
             </div>
         </div>
-        <div class="accordion longsword cut-and-thrust rapier case-of-rapier doppelhander pole-axe pole-arms">
+        <div class="accordion longsword cut-and-thrust rapier case-of-rapier doppelhander pole-axe pole-arms"
+            data-default-cost="(0)" data-cost-pole-axe="(2)" data-cost-case-of-rapier="(1)">
             <h3>
                 <a href="#">Beat</a></h3>
             <div>
@@ -209,7 +245,8 @@
                     all range penalties are but in half (round down) when beating.</p>
             </div>
         </div>
-        <div class="accordion sword-and-shield cut-and-thrust rapier case-of-rapier mass-weapons-and-shield">
+        <div class="accordion sword-and-shield cut-and-thrust rapier case-of-rapier mass-weapons-and-shield"
+            data-default-cost="(0)" data-cost-case-of-rapier="(1)">
             <h3>
                 <a href="#">Bind &amp; Strike</a></h3>
             <div>
@@ -221,7 +258,8 @@
                     margin, good on the next exchange.</p>
             </div>
         </div>
-        <div class="accordion sword-and-shield longsword cut-and-thrust doppelhander pole-axe pole-arms mass-weapons-and-shield dagger">
+        <div class="accordion sword-and-shield longsword cut-and-thrust doppelhander pole-axe pole-arms mass-weapons-and-shield dagger"
+            data-default-cost="(0)" data-cost-doppelhander="(1)">
             <h3>
                 <a href="#">Cut</a></h3>
             <div>
@@ -231,7 +269,8 @@
                     hit.</p>
             </div>
         </div>
-        <div class="accordion cut-and-thrust mass-weapons-and-shield rapier case-of-rapier">
+        <div class="accordion cut-and-thrust rapier case-of-rapier"
+            data-default-cost="(0)" data-cost-case-of-rapier="(1)">
             <h3>
                 <a href="#">Double Strike</a></h3>
             <div>
@@ -243,7 +282,7 @@
                     to hit first</p>
             </div>
         </div>
-        <div class="accordion mass-weapons-and-shield longsword">
+        <div class="accordion longsword" data-default-cost="(1)">
             <h3>
                 <a href="#">Evasive Attack</a></h3>
             <div>
@@ -261,7 +300,8 @@
                 </p>
             </div>
         </div>
-        <div class="accordion cut-and-thrust sword-and-shield longsword doppelhander pole-arms">
+        <div class="accordion cut-and-thrust sword-and-shield longsword doppelhander pole-arms"
+            data-default-cost="(V)">
             <h3>
                 <a href="#">Feint-and-Cut</a></h3>
             <div>
@@ -285,7 +325,8 @@
                 </p>
             </div>
         </div>
-        <div class="accordion cut-and-thrust sword-and-shield longsword rapier case-of-rapier doppelhander pole-arms">
+        <div class="accordion cut-and-thrust sword-and-shield longsword rapier case-of-rapier doppelhander pole-arms"
+            data-default-cost="(V)" data-cost-rapier="(1, may be performed from a thrust)">
             <h3>
                 <a href="#">Feint-and-Thrust</a></h3>
             <div>
@@ -312,7 +353,7 @@
                 </p>
             </div>
         </div>
-        <div class="accordion dagger pugilism">
+        <div class="accordion dagger pugilism" data-default-cost="(2 or 4)">
             <h3>
                 <a href="#">Grapple</a></h3>
             <div>
@@ -334,7 +375,7 @@
                 </p>
             </div>
         </div>
-        <div class="accordion longsword doppelhander">
+        <div class="accordion longsword doppelhander" data-default-cost="(1)">
             <h3>
                 <a href="#">Half-Sword</a></h3>
             <div>
@@ -355,7 +396,8 @@
                 </p>
             </div>
         </div>
-        <div class="accordion mass-weapons-and-shield pole-axe pole-arms mass-weapons-and-shield">
+        <div class="accordion mass-weapons-and-shield pole-axe pole-arms mass-weapons-and-shield"
+            data-default-cost="(1)">
             <h3>
                 <a href="#">Hook</a></h3>
             <div>
@@ -371,7 +413,8 @@
                 </p>
             </div>
         </div>
-        <div class="accordion mass-weapons-and-shield sword-and-shield cut-and-thrust rapier case-of-rapier mass-weapons-and-shield">
+        <div class="accordion mass-weapons-and-shield sword-and-shield cut-and-thrust rapier case-of-rapier mass-weapons-and-shield"
+            data-default-cost="(0)" data-cost-case-of-rapier="(1)">
             <h3>
                 <a href="#">Simultaneous Block/Strike</a></h3>
             <div>
@@ -387,7 +430,7 @@
                 </p>
             </div>
         </div>
-        <div class="accordion longsword cut-and-thrust rapier doppelhander pole-arms">
+        <div class="accordion longsword cut-and-thrust rapier doppelhander pole-arms" data-default-cost="(0)">
             <h3>
                 <a href="#">Stop Short</a></h3>
             <div>
@@ -407,7 +450,8 @@
                 </p>
             </div>
         </div>
-        <div class="accordion sword-and-shield longsword cut-and-thrust rapier case-of-rapier doppelhander pole-axe pole-arms mass-weapons-and-shield dagger">
+        <div class="accordion sword-and-shield longsword cut-and-thrust rapier case-of-rapier doppelhander pole-axe pole-arms mass-weapons-and-shield dagger"
+            data-default-cost="(0)" data-cost-pole-axe="(1)">
             <h3>
                 <a href="#">Thrust</a></h3>
             <div>
@@ -418,7 +462,7 @@
                 </p>
             </div>
         </div>
-        <div class="accordion mass-weapons-and-shield cut-and-thrust rapier">
+        <div class="accordion cut-and-thrust rapier" data-default-cost="(0)">
             <h3>
                 <a href="#">Toss</a></h3>
             <div>
@@ -438,7 +482,8 @@
     <h2>
         Defensive Maneuvers</h2>
     <div class="maneuver-list">
-        <div class="accordion sword-and-shield cut-and-thrust rapier mass-weapons-and-shield">
+        <div class="accordion sword-and-shield cut-and-thrust rapier mass-weapons-and-shield"
+            data-default-cost="(0)">
             <h3>
                 <a href="#">Block</a></h3>
             <div>
@@ -448,7 +493,7 @@
                     except that is uses a shield's DTN.</p>
             </div>
         </div>
-        <div class="accordion sword-and-shield mass-weapons-and-shield">
+        <div class="accordion sword-and-shield mass-weapons-and-shield" data-default-cost="(2)">
             <h3>
                 <a href="#">Block Open and Strike</a></h3>
             <div>
@@ -460,7 +505,8 @@
                     then be made with one additional die for every success in the Margin.</p>
             </div>
         </div>
-        <div class="accordion sword-and-shield longsword cut-and-thrust rapier pole-axe pole-arms">
+        <div class="accordion sword-and-shield longsword cut-and-thrust rapier pole-axe pole-arms"
+            data-default-cost="(2)" data-cost-sword-and-shield="(3, 2 w/o shield)" data-cost-rapier="(3, vs. thrusts and for thrusting only)" data-cost-pole-axe="(3)" data-cost-pole-arms="(4)">
             <h3>
                 <a href="#">Counter</a></h3>
             <div>
@@ -604,7 +650,7 @@
                 </table>
             </div>
         </div>
-        <div class="accordion longsword cut-and-thrust rapier case-of-rapier">
+        <div class="accordion longsword cut-and-thrust rapier case-of-rapier" data-default-cost="(2)" data-cost-case-of-rapier="(3)">
             <h3>
                 <a href="#">Expulsion</a></h3>
             <div>
@@ -622,7 +668,7 @@
                 </p>
             </div>
         </div>
-        <div class="accordion longsword cut-and-thrust rapier pole-axe dagger pugilism">
+        <div class="accordion longsword cut-and-thrust rapier pole-axe dagger pugilism" data-default-cost="(2)">
             <h3>
                 <a href="#">Grapple</a></h3>
             <div>
@@ -648,7 +694,7 @@
                 </p>
             </div>
         </div>
-        <div class="accordion longsword doppelhander mass-weapons-and-shield">
+        <div class="accordion longsword doppelhander" data-default-cost="(1)">
             <h3>
                 <a href="#">Half-sword</a></h3>
             <div>
@@ -657,7 +703,8 @@
                     defensive actions such as a Parry.</p>
             </div>
         </div>
-        <div class="accordion longsword sword-and-shield cut-and-thrust rapier case-of-rapier doppelhander pole-axe pole-arms dagger pugilism">
+        <div class="accordion longsword sword-and-shield cut-and-thrust rapier case-of-rapier doppelhander pole-axe pole-arms dagger pugilism mass-weapons-and-shield"
+            data-default-cost="(0)" data-cost-sword-and-shield="(1, 0 w/o shield)" data-cost-mass-weapons-and-shield="(1)">
             <h3>
                 <a href="#">Parry</a></h3>
             <div>
@@ -682,10 +729,24 @@
             $body.scrollTop(elem.offset().top);
         }
 
+        function calcActivation(elem, profClassName) {
+            var attrName = "data-cost-" + profClassName;
+            var val = elem.attr(attrName);
+            if (val != undefined)
+                return val;
+            else
+                return elem.attr("data-default-cost");
+        }
+
         function applyProfClick() {
             $(".maneuver-list").children().stop(true, true).slideUp();
             var className = $(this).attr("data-prof-class");
-            $("." + className).stop(true, true).slideDown('normal', scrollToProficiencies);
+            $("." + className).stop(true, true).slideDown('normal', scrollToProficiencies).each(function () {
+                var title = $(this).find("a").first();
+                title.next().filter(".activation-cost").remove();
+                var cost = calcActivation(title.parent().parent(), className);
+                $("<span class='activation-cost'>" + cost + "</span>").insertAfter(title);
+            });
         }
 
         function onLoad() {
@@ -697,8 +758,7 @@
             $(".maneuver-list").children().hide();
 
             //setup events
-            $(".proficiency-button").click(applyProfClick);
-            $(".longsword").show();
+            $(".proficiency-button").change(applyProfClick);
         }
 
         $(onLoad);
