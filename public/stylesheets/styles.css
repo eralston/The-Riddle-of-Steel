@@ -1,0 +1,97 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+{
+    display: block;
+}
+ol, ul
+{
+    list-style: none;
+}
+blockquote, q
+{
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after
+{
+    content: '';
+    content: none;
+}
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Styles for this page */
+body, p
+{
+    font-family: Georgia, serif;
+    color: #412F21;
+}
+p
+{
+    margin: 1em 0;
+    line-height: 1.5em;
+}
+body
+{
+    background-image: url("../images/furley_bg.png");
+}
+em
+{
+    font-style: italic;
+}
+strong {
+	ont-weight:bold;
+
+
+}
+h1
+{
+    font-size: 2em;
+    font-weight: bold;
+}
+h2
+{
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+
+.title-block
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 312px;
+    position: relative;
+    font-size: 24;
+}
+
+.sub-title
+{
+    font-size: 0.8em;
+    position: absolute;
+    right: 0.25em;
+    bottom: -10px;
+}
+
+.counter-table th
+{
+    text-align: left;
+}
+
+td, th
+{
+    border: 1px solid #A59484;
+    padding: 0.25em;
+}
