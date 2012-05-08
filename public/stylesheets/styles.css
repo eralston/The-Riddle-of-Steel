@@ -610,7 +610,7 @@ table
 }
 
 /* Styles for this page */
-body, p
+body, p, a
 {
     font-family: Georgia, serif;
     color: #412F21;
