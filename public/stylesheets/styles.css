@@ -569,6 +569,7 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
     {
     width: 100%;
     border-radius: 6px;
+    margin: 0.5em 0;
   }
 }
 
@@ -622,6 +623,7 @@ p
 body
 {
     background-image: url("../images/furley_bg.png");
+    padding: 1em;
 }
 em
 {
@@ -677,6 +679,11 @@ td, th
 
 .activation-cost {
 	display: inline-block;
+}
+
+.accordion
+{
+margin: 1em 0;
 }
 
 .ui-accordion .ui-accordion-header a {
