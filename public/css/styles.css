@@ -689,3 +689,7 @@ margin: 1em 0;
 .ui-accordion .ui-accordion-header a {
 	display: inline-block;
 }
+
+.ui-accordion .ui-accordion-header .ui-icon {
+	display: none;
+}
